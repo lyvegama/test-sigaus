@@ -1,17 +1,26 @@
-/* Error: Undefined variable.
- *    ,
- * 32 |   background-color: $mediumGray;
- *    |                     ^^^^^^^^^^^
- *    '
- *   sass\styles.scss 32:21  root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: "Error: Undefined variable.\a    \2577 \a 32 \2502    background-color: $mediumGray;\d\a    \2502                      ^^^^^^^^^^^\a    \2575 \a   sass\\styles.scss 32:21  root stylesheet";
+@font-face {
+  font-family: "Source";
+  src: url("../../public/fonts/SourceSansPro-Regular.ttf");
 }
+@font-face {
+  font-family: "Isidora";
+  src: url("../../public/fonts/IsidoraSansAlt-Regular.ttf");
+}
+* {
+  background-color: #F5F4F1;
+}
+
+*:visited {
+  color: inherit;
+}
+
+.ulNav {
+  list-style: none;
+  background-color: #ffffff;
+  display: flex;
+  justify-content: space-evenly;
+  padding: 20px;
+  box-shadow: 10px 2px 10px black;
+}
+
+/*# sourceMappingURL=styles.css.map */
