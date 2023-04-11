@@ -7,6 +7,8 @@ import Tabla from '../components/Content/Tabla';
 import Paginacion from '../components/Info/Paginacion';
 import Filtro from '../components/Info/Filtro';
 import Leyenda from '../components/Info/Leyenda';
+import GestionDeclaraciones from '../components/Info/GestionDeclaraciones';
+
 
 const Declaraciones = () => {
 
@@ -17,6 +19,7 @@ const Declaraciones = () => {
       <Configuracion/>
       <Botones/>
       <Filtro/>
+      <GestionDeclaraciones/>
       <Tabla/>
       <Paginacion/>
       <Leyenda/>
