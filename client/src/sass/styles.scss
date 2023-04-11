@@ -1,18 +1,4 @@
 //? Variables - Main Colors
-// Green
-$darkGreen: #034c52;
-$mediumGreen: #015c63;
-$lightGreen: #017075;
-$transp-darkGreen: #034c527f;
-$transp-mediumGreen: #015c6385;
-$transp-lightGreen: #016f757d;
-// Salmon
-$darkSalmon: #e6a69a;
-$mediumSalmon: #ffbaab;
-$lightSalmon: #ffc3b8;
-$transp-darkSalmon: #ffbaab85;
-$transp-mediumSalmon: #ffbaab82;
-$transp-lightSalmon: #ffc3b882;
 // Gray
 $darkGray: #575656;
 $mediumGray: #c7c7c8;
@@ -46,6 +32,7 @@ $fontsec: 'Isidora';
   padding: 0;
   text-decoration: none;
   list-style: none;
+  background-color: $mediumGray;
 }
 
 *:visited{
