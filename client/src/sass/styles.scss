@@ -26,6 +26,7 @@ $fontsec: 'Isidora';
 //? Estilos globales
 * {
   background-color: $light-beige;
+  list-style: none;
 }
 
 *:visited{
@@ -58,3 +59,4 @@ $fontsec: 'Isidora';
 //  Footer
 
 // Content
+@import './components/content/tabla.scss';

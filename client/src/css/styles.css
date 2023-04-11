@@ -8,19 +8,56 @@
 }
 * {
   background-color: #F5F4F1;
+  list-style: none;
 }
 
 *:visited {
   color: inherit;
 }
 
+nav {
+  display: flex;
+  justify-content: space-between;
+  background-color: #ffffff;
+  padding: 10px;
+  box-shadow: 10px 2px 10px rgb(100, 100, 100);
+}
+
 .ulNav {
-  list-style: none;
   background-color: #ffffff;
   display: flex;
   justify-content: space-evenly;
-  padding: 20px;
-  box-shadow: 10px 2px 10px black;
+}
+
+.nav-img {
+  width: 200px;
+}
+
+.ulLista {
+  display: flex;
+  flex-direction: row;
+  color: white;
+  padding-right: 50px;
+  list-style: none;
+  text-align: center;
+}
+
+.ulLista li {
+  margin-right: 150px;
+  text-align: center;
+}
+
+.ulLydia {
+  display: flex;
+  flex-direction: row;
+  color: #343A40;
+  padding-right: 50px;
+  list-style: none;
+}
+
+.ulLydia li {
+  margin-right: 70px;
+  text-align: center;
 }
 
 /*# sourceMappingURL=styles.css.map */
