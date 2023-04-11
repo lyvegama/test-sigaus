@@ -6,6 +6,7 @@ import Configuracion from '../components/Info/Configuracion';
 import Tabla from '../components/Content/Tabla';
 import Paginacion from '../components/Info/Paginacion';
 import Filtro from '../components/Info/Filtro';
+import Leyenda from '../components/Info/Leyenda';
 
 const Declaraciones = () => {
 
@@ -15,9 +16,10 @@ const Declaraciones = () => {
       <Encabezado/>
       <Configuracion/>
       <Botones/>
+      <Filtro/>
       <Tabla/>
       <Paginacion/>
-      <Filtro/>
+      <Leyenda/>
     </div>
   )
 }
