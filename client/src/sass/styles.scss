@@ -1,13 +1,10 @@
 //? Variables - Main Colors
-// Gray
-$darkGray: #575656;
-$mediumGray: #c7c7c8;
-$lightGray: #ececec;
+// Colores
 $white: #ffffff;
-$transp-darkGray: #5756567c;
-$transp-mediumGray: #c7c7c887;
-$transp-lightGray: #ececec7d;
-$transp-white: #ffffff77;
+$light-beige: #F5F4F1;
+$dark-beige: #E7E6E3;
+$dark-gray: #343A40;
+$mustard: #BFA317;
 
 //? FlexBox
 
@@ -28,11 +25,8 @@ $fontsec: 'Isidora';
 
 //? Estilos globales
 * {
-  margin: 0;
-  padding: 0;
-  text-decoration: none;
+  background-color: $light-beige;
   list-style: none;
-  background-color: $mediumGray;
 }
 
 *:visited{
@@ -65,3 +59,4 @@ $fontsec: 'Isidora';
 //  Footer
 
 // Content
+@import './components/content/tabla.scss';

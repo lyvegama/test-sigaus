@@ -7,11 +7,8 @@
   src: url("../../public/fonts/IsidoraSansAlt-Regular.ttf");
 }
 * {
-  margin: 0;
-  padding: 0;
-  text-decoration: none;
+  background-color: #F5F4F1;
   list-style: none;
-  background-color: #c7c7c8;
 }
 
 *:visited {
@@ -19,13 +16,48 @@
 }
 
 nav {
-  position: absolute;
   display: flex;
   justify-content: space-between;
-  width: 100%;
-  height: 140px;
-  z-index: 1;
-  background-color: rgba(255, 255, 255, 0.2);
+  background-color: #ffffff;
+  padding: 10px;
+  box-shadow: 10px 2px 10px rgb(100, 100, 100);
+}
+
+.ulNav {
+  background-color: #ffffff;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.nav-img {
+  width: 200px;
+}
+
+.ulLista {
+  display: flex;
+  flex-direction: row;
+  color: white;
+  padding-right: 50px;
+  list-style: none;
+  text-align: center;
+}
+
+.ulLista li {
+  margin-right: 150px;
+  text-align: center;
+}
+
+.ulLydia {
+  display: flex;
+  flex-direction: row;
+  color: #343A40;
+  padding-right: 50px;
+  list-style: none;
+}
+
+.ulLydia li {
+  margin-right: 70px;
+  text-align: center;
 }
 
 /*# sourceMappingURL=styles.css.map */
