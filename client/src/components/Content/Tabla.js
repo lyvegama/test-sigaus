@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
-import cv from '../../pdf_files/Curriculum-lydia-vega.FullStack.pdf'
-
+import cv from '../../pdf_files/Curriculum-lydia-vega.FullStack.pdf';
 
 const Tabla = () => {
 

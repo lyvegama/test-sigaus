@@ -16,21 +16,43 @@
 }
 
 nav {
+  height: 60px;
+  margin-top: -10px;
   display: flex;
+  align-items: center;
   justify-content: space-between;
   background-color: #ffffff;
-  padding: 10px;
   box-shadow: 10px 2px 10px rgb(100, 100, 100);
 }
-
-.ulNav {
+nav img {
+  background-color: #ffffff;
+  width: 200px;
+}
+nav ul {
   background-color: #ffffff;
   display: flex;
-  justify-content: space-evenly;
+  color: #343A40;
+}
+nav a {
+  text-decoration: none;
+  background-color: #ffffff;
+}
+nav li {
+  background-color: #ffffff;
+  display: flex;
+  align-items: center;
+}
+nav svg {
+  background-color: #ffffff;
 }
 
-.nav-img {
-  width: 200px;
+.ulNavCenter {
+  background-color: #ffffff;
+  width: 1000px;
+}
+.ulNavCenter ul {
+  display: flex;
+  justify-content: space-around;
 }
 
 .pagination {
