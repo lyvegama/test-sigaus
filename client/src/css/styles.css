@@ -1,10 +1,6 @@
 @font-face {
-  font-family: "Source";
-  src: url("../../public/fonts/SourceSansPro-Regular.ttf");
-}
-@font-face {
-  font-family: "Isidora";
-  src: url("../../public/fonts/IsidoraSansAlt-Regular.ttf");
+  font-family: "Signika";
+  src: url("../../public/fonts/Signika-VariableFont_wght.ttf");
 }
 body {
   display: flex;
@@ -21,8 +17,13 @@ body {
   color: inherit;
 }
 
+p, h1, h2, h3, a {
+  color: #495057;
+  font-family: "Signika";
+}
+
 .headerDeclaraciones {
-  margin: 0px 350px;
+  margin: 20px 350px 0px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -35,10 +36,30 @@ body {
   margin: 0px 350px;
 }
 
+.colorBody {
+  background-color: #F5F4F1;
+  width: 100%;
+}
+
 .footerDeclaraciones {
   display: flex;
   justify-content: flex-end;
   height: 60px;
+}
+
+.tablaCabecera {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  color: #A19279;
+  padding: 10px;
+}
+
+.trTabla {
+  display: flex;
+  flex-direction: row;
+  color: #343A40;
+  justify-content: space-between;
 }
 
 nav {
@@ -58,6 +79,7 @@ nav ul {
 }
 nav a {
   text-decoration: none;
+  color: #495057;
 }
 nav li {
   display: flex;
@@ -178,6 +200,15 @@ nav li {
   color: #A19279;
 }
 
+a {
+  color: #177DA6;
+  font-weight: bold;
+}
+
+#flecha {
+  fill: #177DA6;
+}
+
 .paginacion {
   display: flex;
   align-items: center;
@@ -209,20 +240,11 @@ nav li {
   font-size: 15px;
   margin: 0px;
 }
-
-.tablaCabecera {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  color: #A19279;
-  padding: 10px;
+.leyenda #pendiente {
+  fill: #F2522E;
 }
-
-.trTabla {
-  display: flex;
-  flex-direction: row;
-  color: #343A40;
-  justify-content: space-between;
+.leyenda #espera {
+  fill: rgb(240, 150, 33);
 }
 
 /*# sourceMappingURL=styles.css.map */

@@ -1,31 +1,32 @@
 //? Variables - Main Colors
-// Colores
 $white: #ffffff;
 $light-beige: #F5F4F1;
 $dark-beige: #E7E6E3;
 $dark-gray: #343A40;
 $light-brown: #A19279;
 $mustard: #BFA317;
+$red-notification: #F2522E;
+$blue-pdf: #177DA6;
 
 //? FlexBox
 
-//? Variables - Font Colors & Styles
+
+
+//? Variables - Font Color & Styles
 
 @font-face {
-  font-family: 'Source';
-  src: url('../../public/fonts/SourceSansPro-Regular.ttf');
-}
-
-@font-face {
-  font-family: 'Isidora';
-  src: url('../../public/fonts/IsidoraSansAlt-Regular.ttf');
+  font-family: 'Signika';
+  src: url('../../public/fonts/Signika-VariableFont_wght.ttf');
 }
 // fonts variables
-$fontprin: 'Source';
-$fontsec: 'Isidora';
+$fontSignika: 'Signika';
+
+// font colors
+$dark-font: #212529;
+$medium-font: #495057;
+$light-font: #B0B4B3;
 
 //? Estilos globales
-
 body {
   display: flex;
   flex-direction: column;
@@ -41,9 +42,13 @@ body {
   color: inherit;
 }
 
+p, h1, h2, h3, a {
+color: $medium-font;
+font-family: $fontSignika;
+}
 
 .headerDeclaraciones{
-  margin: 0px 350px;
+  margin: 20px 350px 0px;
   display: flex;
   flex-direction: row;
   justify-content:space-between;
@@ -56,12 +61,16 @@ body {
   margin: 0px 350px;
 }
 
+.colorBody {
+  background-color: $light-beige;
+  width: 100%;
+}
+
 .footerDeclaraciones{
   display: flex;
   justify-content: flex-end;
   height: 60px;
 }
-
 
 //? Import
 
@@ -73,18 +82,14 @@ body {
 @import './pages/instalaciones.scss';
 
 //* Components
+// Content
+@import './components/content/tabla.scss';
 // Header
 @import './components/header/nav.scss';
 @import './components/header/encabezado.scss';
 @import './components/header/botones.scss';
-
+// Info
 @import './components/info/filtro.scss';
 @import './components/info/gestionDeclaraciones.scss';
 @import './components/info/paginacion.scss';
 @import './components/info/leyenda.scss';
-
-
-//  Footer
-
-// Content
-@import './components/content/tabla.scss';

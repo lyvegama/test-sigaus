@@ -9,24 +9,25 @@ import Filtro from '../components/Info/Filtro';
 import Leyenda from '../components/Info/Leyenda';
 import GestionDeclaraciones from '../components/Info/GestionDeclaraciones';
 
-
 const Declaraciones = () => {
 
   return (
     <div className='declaracionesHome'>
       <Nav />
       <div className='headerDeclaraciones'>
-      <Encabezado />
-      <Configuracion />
+        <Encabezado />
+        <Configuracion />
       </div>
       <Botones />
-      <div className='cuerpoDeclaraciones'>
-        <Filtro />
-        <GestionDeclaraciones />
-        <Tabla />
-        <div className='footerDeclaraciones'>
-        <Paginacion />
-        <Leyenda />
+      <div className='colorBody'>
+        <div className='cuerpoDeclaraciones'>
+          <Filtro />
+          <GestionDeclaraciones />
+          <Tabla />
+          <div className='footerDeclaraciones'>
+            <Paginacion />
+            <Leyenda />
+          </div>
         </div>
       </div>
     </div>
