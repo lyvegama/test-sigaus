@@ -21,6 +21,7 @@
   margin: 0px 350px;
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
 }
 
 nav {
@@ -60,13 +61,42 @@ nav li {
 }
 
 .configuracion {
-  width: 200px;
+  width: 140px;
+  border-style: solid;
+  border-color: #E7E6E3;
+  border-width: 1px;
+  margin: 20px 0px;
+  padding: 0px 10px 0px;
+}
+
+.svgConfigurar {
   display: flex;
-  background-color: aqua;
+  align-items: center;
+  justify-content: center;
+}
+
+.botones ul {
+  padding: 20px;
+}
+.botones ul a {
+  text-decoration: none;
+}
+.botones ul li, .botones ul svg {
+  list-style-type: none;
+}
+
+.liEncabezado {
+  height: 30px;
+  border-right: 1px solid #E7E6E3;
+  padding-right: 20px;
 }
 
 .ulEncabezado {
   margin: 0px 350px;
+  width: 600px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .pagination {

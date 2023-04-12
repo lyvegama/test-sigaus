@@ -1,5 +1,9 @@
 .ulEncabezado {
   margin: 0px 350px;
+  width: 600px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 /*# sourceMappingURL=botones.css.map */

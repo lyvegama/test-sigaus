@@ -40,7 +40,7 @@ $fontsec: 'Isidora';
   margin: 0px 350px;
   display: flex;
   flex-direction: row;
-
+  justify-content:space-between;
 }
 
 // body,
@@ -50,7 +50,7 @@ $fontsec: 'Isidora';
 //   flex-direction: column;
 //   width: 100%;
 //   height: 100%;
-//   background-color: $lightGray
+//   background-color: $light-beige;
 // }
 
 //? Import
