@@ -10,18 +10,18 @@
   color: inherit;
 }
 
-.cuerpoDeclaraciones {
-  background-color: #F5F4F1;
-  display: flex;
-  align-items: center;
-  margin: 0px 350px;
-}
-
 .headerDeclaraciones {
   margin: 0px 350px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+}
+
+.cuerpoDeclaraciones {
+  background-color: #F5F4F1;
+  display: flex;
+  flex-direction: column;
+  margin: 0px 350px;
 }
 
 nav {
@@ -75,6 +75,14 @@ nav li {
   justify-content: center;
 }
 
+.ulEncabezado {
+  margin: 0px 350px;
+  width: 600px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
 .botones ul {
   padding: 20px;
 }
@@ -89,14 +97,6 @@ nav li {
   height: 30px;
   border-right: 1px solid #E7E6E3;
   padding-right: 20px;
-}
-
-.ulEncabezado {
-  margin: 0px 350px;
-  width: 600px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
 }
 
 .pagination {
@@ -128,31 +128,76 @@ nav li {
   color: #101010;
 }
 
-.ulLista {
+.filtro {
+  border-right: 1px solid #ffffff;
+}
+.filtro form {
+  background-color: #E7E6E3;
   display: flex;
   flex-direction: row;
-  color: white;
-  padding-right: 50px;
+  align-items: center;
+  margin: 10px 0px 0px;
+}
+.filtro button {
+  margin: 10px;
+  padding: 10px;
+  background-color: #ffffff;
+  border: none;
+}
+
+.buscar {
+  background-image: url("file:/C:/Users/lyveg/Downloads/search_FILL0_wght400_GRAD0_opsz48%20(1).svg");
+}
+
+.gestiondeclaraciones {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.gestioncajas {
+  display: flex;
+  flex-direction: row;
+}
+
+.gestioncaja {
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: row;
+  border-style: solid;
+  border-color: #E7E6E3;
+  border-width: 1px;
+  margin: 20px 0px;
+  padding: 0px 10px 0px;
+}
+.gestioncaja p {
+  color: #A19279;
+}
+
+.tablaCabecera {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  color: #A19279;
   list-style: none;
-  text-align: center;
+  padding: 10px;
+}
+.tablaCabecera th {
+  display: flex;
+  flex-direction: row;
 }
 
-.ulLista li {
-  margin-right: 150px;
-  text-align: center;
-}
-
-.ulLydia {
+.trTabla {
   display: flex;
   flex-direction: row;
   color: #343A40;
-  padding-right: 50px;
   list-style: none;
+  justify-content: space-between;
 }
-
-.ulLydia li {
-  margin-right: 70px;
+.trTabla td {
+  display: flex;
   text-align: center;
+  background-color: aqua;
 }
 
 /*# sourceMappingURL=styles.css.map */

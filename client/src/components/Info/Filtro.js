@@ -1,8 +1,8 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import Buscador from './Buscador';
 
-const Filtro = () => {
 
+const Filtro = () => {
     const [answers, setAnswers] = useState("");
 
     const months = [
@@ -22,30 +22,30 @@ const Filtro = () => {
     ]
 
 
-    const selectMonth = (event) => {
-        event.preventDefault();
-        const currentMonth = event.target.value;
+    const selectMonth = ({target}) => {
+
+        const currentMonth = target.value;
         setAnswers(localStorage.setItem('month', currentMonth))
+
     }
 
     return (
-        <div>
-            <form>
+        <div className='filtro'>
+
+           <form>
+            <h3>Filtrar</h3>
+           <input type="text" defaultValue={localStorage.getItem('month')} />
                 {months ? months.map((month, i) => (
 
                     <div key={i}>
 
                         <button onClick={selectMonth} value={month.value}>{month.text}</button>
 
-
                     </div>
 
                 )) : ""}
-
-                <input type="text" defaultValue={localStorage.getItem('month')} />
-
-            </form>
-
+<Buscador/>
+                </form>
 
         </div>
     )

@@ -1,26 +1,28 @@
-.ulLista{
-    display: flex;
-    flex-direction: row;
-    color: white;
-    padding-right: 50px;
-    list-style: none;
-    text-align: center;
+.tablaCabecera {
+    display        : flex;
+    flex-direction : row;
+    justify-content: space-between;
+    color          : $light-brown;
+    list-style     : none;
+    padding        : 10px;
+    th {
+        display       : flex;
+        flex-direction: row;
+        
+    }
 }
 
-.ulLista li{
-    margin-right: 150px;
-    text-align: center;
-}
+.trTabla {
+    display        : flex;
+    flex-direction : row;
+    color          : $dark-gray;
+    list-style     : none;
+    justify-content: space-between;
 
-.ulLydia{
-    display: flex;
-    flex-direction: row;
-    color: $dark-gray;
-    padding-right: 50px;
-    list-style: none;
-}
-
-.ulLydia li{
-    margin-right: 70px;
-    text-align: center;
+    td {
+        display   : flex;
+        text-align: center;
+        
+background-color: aqua;
+    }
 }

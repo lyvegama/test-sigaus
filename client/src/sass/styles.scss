@@ -4,6 +4,7 @@ $white: #ffffff;
 $light-beige: #F5F4F1;
 $dark-beige: #E7E6E3;
 $dark-gray: #343A40;
+$light-brown: #A19279;
 $mustard: #BFA317;
 
 //? FlexBox
@@ -29,12 +30,6 @@ $fontsec: 'Isidora';
   color: inherit;
 }
 
-.cuerpoDeclaraciones {
-  background-color: $light-beige;
-  display: flex;
-  align-items: center;
-  margin: 0px 350px;
-}
 
 .headerDeclaraciones{
   margin: 0px 350px;
@@ -43,6 +38,13 @@ $fontsec: 'Isidora';
   justify-content:space-between;
 }
 
+.cuerpoDeclaraciones {
+  background-color: $light-beige;
+  display: flex;
+  flex-direction: column;
+  margin: 0px 350px;
+
+}
 // body,
 // .app,
 // .page {
@@ -69,6 +71,8 @@ $fontsec: 'Isidora';
 @import './components/header/botones.scss';
 
 @import './components/info/paginacion.scss';
+@import './components/info/filtro.scss';
+@import './components/info/gestionDeclaraciones.scss';
 
 
 //  Footer
