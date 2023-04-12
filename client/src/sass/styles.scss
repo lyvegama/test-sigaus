@@ -24,13 +24,23 @@ $fontprin: 'Source';
 $fontsec: 'Isidora';
 
 //? Estilos globales
-* {
-  background-color: $light-beige;
-  list-style: none;
-}
 
 *:visited{
   color: inherit;
+}
+
+.cuerpoDeclaraciones {
+  background-color: $light-beige;
+  display: flex;
+  align-items: center;
+  margin: 0px 350px;
+}
+
+.headerDeclaraciones{
+  margin: 0px 350px;
+  display: flex;
+  flex-direction: row;
+
 }
 
 // body,
@@ -55,6 +65,8 @@ $fontsec: 'Isidora';
 //* Components
 // Header
 @import './components/header/nav.scss';
+@import './components/header/encabezado.scss';
+@import './components/header/botones.scss';
 
 @import './components/info/paginacion.scss';
 

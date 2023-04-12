@@ -4,34 +4,24 @@ nav {
     display         : flex;
     align-items     : center;
     justify-content : space-between;
-    background-color: $white;
     box-shadow      : 10px 2px 10px rgb(100, 100, 100);
 
     img {
-        background-color: $white;
         width           : 200px;
     }
 
     ul {
-        background-color: $white;
         display         : flex;
         color           : $dark-gray;
     }
 
     a {
         text-decoration: none;
-        background-color: $white;
     }
     li {
-        background-color: $white;
         display         : flex;
         align-items     : center;
     }
-
-    svg{
-        background-color: $white;
-    }    
-
 }
 .ulNavCenter {
     background-color: $white;

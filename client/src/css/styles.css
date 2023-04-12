@@ -6,13 +6,21 @@
   font-family: "Isidora";
   src: url("../../public/fonts/IsidoraSansAlt-Regular.ttf");
 }
-* {
-  background-color: #F5F4F1;
-  list-style: none;
-}
-
 *:visited {
   color: inherit;
+}
+
+.cuerpoDeclaraciones {
+  background-color: #F5F4F1;
+  display: flex;
+  align-items: center;
+  margin: 0px 350px;
+}
+
+.headerDeclaraciones {
+  margin: 0px 350px;
+  display: flex;
+  flex-direction: row;
 }
 
 nav {
@@ -21,29 +29,21 @@ nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: #ffffff;
   box-shadow: 10px 2px 10px rgb(100, 100, 100);
 }
 nav img {
-  background-color: #ffffff;
   width: 200px;
 }
 nav ul {
-  background-color: #ffffff;
   display: flex;
   color: #343A40;
 }
 nav a {
   text-decoration: none;
-  background-color: #ffffff;
 }
 nav li {
-  background-color: #ffffff;
   display: flex;
   align-items: center;
-}
-nav svg {
-  background-color: #ffffff;
 }
 
 .ulNavCenter {
@@ -53,6 +53,20 @@ nav svg {
 .ulNavCenter ul {
   display: flex;
   justify-content: space-around;
+}
+
+.pagEncabezado {
+  width: 400px;
+}
+
+.configuracion {
+  width: 200px;
+  display: flex;
+  background-color: aqua;
+}
+
+.ulEncabezado {
+  margin: 0px 350px;
 }
 
 .pagination {
