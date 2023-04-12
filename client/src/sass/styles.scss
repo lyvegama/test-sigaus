@@ -26,6 +26,17 @@ $fontsec: 'Isidora';
 
 //? Estilos globales
 
+body {
+  display: flex;
+  flex-direction: column;
+  background-color: $white;
+}
+
+* {
+  margin:0px;
+  padding:0px;
+}
+
 *:visited{
   color: inherit;
 }
@@ -43,17 +54,14 @@ $fontsec: 'Isidora';
   display: flex;
   flex-direction: column;
   margin: 0px 350px;
-
 }
-// body,
-// .app,
-// .page {
-//   display: flex;
-//   flex-direction: column;
-//   width: 100%;
-//   height: 100%;
-//   background-color: $light-beige;
-// }
+
+.footerDeclaraciones{
+  display: flex;
+  justify-content: flex-end;
+  height: 60px;
+}
+
 
 //? Import
 
@@ -70,9 +78,10 @@ $fontsec: 'Isidora';
 @import './components/header/encabezado.scss';
 @import './components/header/botones.scss';
 
-@import './components/info/paginacion.scss';
 @import './components/info/filtro.scss';
 @import './components/info/gestionDeclaraciones.scss';
+@import './components/info/paginacion.scss';
+@import './components/info/leyenda.scss';
 
 
 //  Footer

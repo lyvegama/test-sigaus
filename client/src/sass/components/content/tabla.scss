@@ -3,26 +3,16 @@
     flex-direction : row;
     justify-content: space-between;
     color          : $light-brown;
-    list-style     : none;
     padding        : 10px;
-    th {
-        display       : flex;
-        flex-direction: row;
-        
-    }
+    
+
 }
 
 .trTabla {
     display        : flex;
     flex-direction : row;
     color          : $dark-gray;
-    list-style     : none;
-    justify-content: space-between;
-
-    td {
-        display   : flex;
-        text-align: center;
+    justify-content: space-between; 
         
-background-color: aqua;
-    }
+
 }

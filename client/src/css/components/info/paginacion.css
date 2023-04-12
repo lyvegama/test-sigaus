@@ -1,30 +1,17 @@
-.pagination {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  margin-top: 1rem;
-}
+/* Error: Undefined variable.
+ *    ,
+ * 18 |         background-color: $white;
+ *    |                           ^^^^^^
+ *    '
+ *   sass\components\info\paginacion.scss 18:27  root stylesheet */
 
-.pagination button {
-  width: 40px;
-  height: 40px;
-  font-family: inherit;
-  font-weight: 600;
-  font-size: 16px;
-  margin: 0 10px;
-  border-radius: 6px;
-  cursor: pointer;
-  transition: all 0.3s ease;
-  background: transparent;
-  color: #eee;
-  border-color: #eee;
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
+  display: block;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: "Error: Undefined variable.\a    \2577 \a 18 \2502          background-color: $white;\d\a    \2502                            ^^^^^^\a    \2575 \a   sass\\components\\info\\paginacion.scss 18:27  root stylesheet";
 }
-
-.pagination button.active {
-  font-weight: 900;
-  border-color: #101010;
-  background: #ffe400;
-  color: #101010;
-}
-
-/*# sourceMappingURL=paginacion.css.map */

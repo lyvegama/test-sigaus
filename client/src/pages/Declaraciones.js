@@ -13,7 +13,7 @@ import GestionDeclaraciones from '../components/Info/GestionDeclaraciones';
 const Declaraciones = () => {
 
   return (
-    <div className='pageHome'>
+    <div className='declaracionesHome'>
       <Nav />
       <div className='headerDeclaraciones'>
       <Encabezado />
@@ -24,8 +24,10 @@ const Declaraciones = () => {
         <Filtro />
         <GestionDeclaraciones />
         <Tabla />
+        <div className='footerDeclaraciones'>
         <Paginacion />
         <Leyenda />
+        </div>
       </div>
     </div>
   )

@@ -13,7 +13,7 @@ const Tabla = () => {
         {
             "referencia": "DCS452586685524855",
             "tipo": "B",
-            "cantidad": "25.140 Kkg",
+            "cantidad": "25.140 kg",
             "origen": "BARCELONA",
             "fecha": "02/08/2022",
             "oleoso": "20",
@@ -21,98 +21,99 @@ const Tabla = () => {
             "acciones": ""
         },
         {
-            "referencia": "DCS452586685524855",
+            "referencia": "DCS452586685524365",
             "tipo": "B",
-            "cantidad": "25.140 Kkg",
-            "origen": "BARCELONA",
+            "cantidad": "25.140 kg",
+            "origen": "VALENCIA",
             "fecha": "02/08/2022",
-            "oleoso": "20",
+            "oleoso": "92,87",
             "incidencia": [0,0],
             "acciones": ""
         },
         {
-            "referencia": "DCS452586685524855",
+            "referencia": "DCS452586685524885",
             "tipo": "B",
-            "cantidad": "25.140 Kkg",
-            "origen": "BARCELONA",
+            "cantidad": "25.140 kg",
+            "origen": "ALAVA",
             "fecha": "02/08/2022",
-            "oleoso": "20",
+            "oleoso": "92,69",
             "incidencia": [0,0],
             "acciones": ""
         },
         {
-            "referencia": "DCS452586685524855",
+            "referencia": "DCS452586685524836",
             "tipo": "B",
-            "cantidad": "25.140 Kkg",
-            "origen": "BARCELONA",
+            "cantidad": "25.140 kg",
+            "origen": "ALBACETE",
             "fecha": "02/08/2022",
-            "oleoso": "20",
+            "oleoso": "94,45",
             "incidencia": [0,0],
             "acciones": ""
         },
         {
-            "referencia": "DCS452586685524855",
+            "referencia": "DCS452586685524878",
             "tipo": "B",
-            "cantidad": "25.140 Kkg",
-            "origen": "BARCELONA",
+            "cantidad": "25.140 kg",
+            "origen": "CADIZ",
             "fecha": "02/08/2022",
-            "oleoso": "20",
+            "oleoso": "96,45",
             "incidencia": [0,0],
             "acciones": ""
         },
         {
-            "referencia": "DCS452586685524855",
+            "referencia": "DCS452586685524845",
             "tipo": "B",
-            "cantidad": "25.140 Kkg",
-            "origen": "BARCELONA",
+            "cantidad": "25.140 kg",
+            "origen": "SEVILLA",
             "fecha": "02/08/2022",
-            "oleoso": "20",
+            "oleoso": "93,2",
             "incidencia": [0,0],
             "acciones": ""
         },
         {
-            "referencia": "DCS452586685524855",
+            "referencia": "DCS452586685524836",
             "tipo": "B",
-            "cantidad": "25.140 Kkg",
-            "origen": "BARCELONA",
+            "cantidad": "25.140 kg",
+            "origen": "GRANADA",
             "fecha": "02/08/2022",
-            "oleoso": "20",
+            "oleoso": "92,9",
             "incidencia": [0,0],
             "acciones": ""
         },
         {
-            "referencia": "DCS452586685524855",
+            "referencia": "DCS452586685524822",
             "tipo": "B",
-            "cantidad": "25.140 Kkg",
-            "origen": "BARCELONA",
+            "cantidad": "25.140 kg",
+            "origen": "MADRID",
             "fecha": "02/08/2022",
-            "oleoso": "20",
+            "oleoso": "96",
             "incidencia": [0,0],
             "acciones": ""
         },
         {
-            "referencia": "DCS452586685524855",
+            "referencia": "DCS452586685524815",
             "tipo": "B",
-            "cantidad": "25.140 Kkg",
-            "origen": "BARCELONA",
+            "cantidad": "25.140 kg",
+            "origen": "GRANADA",
             "fecha": "02/08/2022",
-            "oleoso": "20",
+            "oleoso": "92,9",
             "incidencia": [0,0],
             "acciones": ""
         },
         {
-            "referencia": "DCS452586685524855",
+            "referencia": "DCS452586685524877",
             "tipo": "B",
-            "cantidad": "25.140 Kkg",
-            "origen": "BARCELONA",
+            "cantidad": "25.140 kg",
+            "origen": "VALENCIA",
             "fecha": "02/08/2022",
-            "oleoso": "20",
+            "oleoso": "92,3",
             "incidencia": [0,0],
             "acciones": ""
         }
     ]
     return (
         <div className='tabla'>
+            <hr></hr>
             <tr className='tablaCabecera'>
                 <th>Nº REFERENCIA<svg xmlns="http://www.w3.org/2000/svg" height="20" viewBox="0 96 960 960" width="48"><path d="M322 606V290L202 410l-42-42 193-193 193 193-42 42-122-121v317h-60Zm285 369L414 781l42-41 120 120V544h60v317l122-121 42 42-193 193Z" /></svg>
                 </th>
@@ -130,6 +131,7 @@ const Tabla = () => {
                 <th></th>
                 <th>ACCIONES</th>
             </tr>
+            <hr></hr>
             {tabla.length > 0 ? tabla.map((dato, i) => (
                 <div key={i} className='divTabla'>
                     <tr className='trTabla'>

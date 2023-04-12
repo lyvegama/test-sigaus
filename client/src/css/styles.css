@@ -6,6 +6,17 @@
   font-family: "Isidora";
   src: url("../../public/fonts/IsidoraSansAlt-Regular.ttf");
 }
+body {
+  display: flex;
+  flex-direction: column;
+  background-color: #ffffff;
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
 *:visited {
   color: inherit;
 }
@@ -24,16 +35,22 @@
   margin: 0px 350px;
 }
 
-nav {
+.footerDeclaraciones {
+  display: flex;
+  justify-content: flex-end;
   height: 60px;
-  margin-top: -10px;
+}
+
+nav {
+  height: 50px;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  box-shadow: 10px 2px 10px rgb(100, 100, 100);
+  box-shadow: 0px 0px 7px #343A40;
 }
 nav img {
-  width: 200px;
+  width: 150px;
+  padding-left: 15px;
 }
 nav ul {
   display: flex;
@@ -53,7 +70,23 @@ nav li {
 }
 .ulNavCenter ul {
   display: flex;
+  align-items: center;
   justify-content: space-around;
+}
+.ulNavCenter .activeNav {
+  border-bottom: 9px solid #BFA317;
+}
+
+#logout {
+  background-color: #343A40;
+  height: 50px;
+}
+#logout svg {
+  fill: #ffffff;
+}
+
+.iconNav li {
+  padding: 0px 20px;
 }
 
 .pagEncabezado {
@@ -97,35 +130,6 @@ nav li {
   height: 30px;
   border-right: 1px solid #E7E6E3;
   padding-right: 20px;
-}
-
-.pagination {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  margin-top: 1rem;
-}
-
-.pagination button {
-  width: 40px;
-  height: 40px;
-  font-family: inherit;
-  font-weight: 600;
-  font-size: 16px;
-  margin: 0 10px;
-  border-radius: 6px;
-  cursor: pointer;
-  transition: all 0.3s ease;
-  background: transparent;
-  color: #eee;
-  border-color: #eee;
-}
-
-.pagination button.active {
-  font-weight: 900;
-  border-color: #101010;
-  background: #ffe400;
-  color: #101010;
 }
 
 .filtro {
@@ -174,30 +178,51 @@ nav li {
   color: #A19279;
 }
 
+.paginacion {
+  display: flex;
+  align-items: center;
+  margin-right: 400px;
+}
+
+.botonesPaginacion button {
+  width: 40px;
+  height: 40px;
+  margin: 0px 10px;
+  border-style: none;
+  background-color: transparent;
+}
+.botonesPaginacion #active {
+  border-radius: 2px;
+  background-color: #ffffff;
+  color: #343A40;
+  border-color: #E7E6E3;
+  border-style: solid;
+}
+
+.leyenda {
+  margin-top: 2px;
+  padding-right: 20px;
+  display: flex;
+  flex-direction: column;
+}
+.leyenda p {
+  font-size: 15px;
+  margin: 0px;
+}
+
 .tablaCabecera {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   color: #A19279;
-  list-style: none;
   padding: 10px;
-}
-.tablaCabecera th {
-  display: flex;
-  flex-direction: row;
 }
 
 .trTabla {
   display: flex;
   flex-direction: row;
   color: #343A40;
-  list-style: none;
   justify-content: space-between;
-}
-.trTabla td {
-  display: flex;
-  text-align: center;
-  background-color: aqua;
 }
 
 /*# sourceMappingURL=styles.css.map */
