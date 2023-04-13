@@ -23,7 +23,7 @@ p, h1, h2, h3, a {
 }
 
 .headerDeclaraciones {
-  margin: 20px 350px 0px;
+  margin: 20px 400px 0px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -33,7 +33,7 @@ p, h1, h2, h3, a {
   background-color: #F5F4F1;
   display: flex;
   flex-direction: column;
-  margin: 0px 350px;
+  margin: 0px 400px 0px;
 }
 
 .colorBody {
@@ -47,19 +47,65 @@ p, h1, h2, h3, a {
   height: 60px;
 }
 
+.tabla {
+  margin: 5px;
+  font-family: "Signika";
+  font-weight: bold;
+}
+
 .tablaCabecera {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   color: #A19279;
-  padding: 10px;
+  padding: 5px;
+  margin: 5px;
+}
+.tablaCabecera th {
+  display: flex;
+  align-items: flex-end;
+}
+.tablaCabecera th svg {
+  fill: #A19279;
+}
+.tablaCabecera th p {
+  color: #E7E6E3;
 }
 
 .trTabla {
   display: flex;
   flex-direction: row;
-  color: #343A40;
   justify-content: space-between;
+  align-items: center;
+  color: #495057;
+  padding: 5px;
+  margin: 5px;
+}
+.trTabla td {
+  display: flex;
+  align-items: flex-end;
+}
+.trTabla td .notificacionesTabla {
+  fill: #B0B4B3;
+}
+.trTabla td .pdf {
+  fill: #177DA6;
+}
+.trTabla td a {
+  text-decoration: none;
+  color: #177DA6;
+}
+
+.checkbox {
+  appearance: none;
+  background-color: #ffffff;
+  width: 20px;
+  height: 20px;
+  border-radius: 2px;
+  border-width: 1px;
+  background-color: #ffffff;
+  border-color: #B0B4B3;
+  border-style: groove;
 }
 
 nav {
@@ -100,7 +146,7 @@ nav li {
 }
 
 #logout {
-  background-color: #343A40;
+  background-color: #495057;
   height: 50px;
 }
 #logout svg {
@@ -112,26 +158,11 @@ nav li {
 }
 
 .pagEncabezado {
-  width: 400px;
-}
-
-.configuracion {
-  width: 140px;
-  border-style: solid;
-  border-color: #E7E6E3;
-  border-width: 1px;
-  margin: 20px 0px;
-  padding: 0px 10px 0px;
-}
-
-.svgConfigurar {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  width: 450px;
 }
 
 .ulEncabezado {
-  margin: 0px 350px;
+  margin: 0px 400px;
   width: 600px;
   display: flex;
   align-items: center;
@@ -143,8 +174,9 @@ nav li {
 }
 .botones ul a {
   text-decoration: none;
+  color: #B0B4B3;
 }
-.botones ul li, .botones ul svg {
+.botones ul li {
   list-style-type: none;
 }
 
@@ -153,32 +185,93 @@ nav li {
   border-right: 1px solid #E7E6E3;
   padding-right: 20px;
 }
+.liEncabezado svg {
+  fill: #B0B4B3;
+}
+
+.configuracion {
+  width: 130px;
+  border-style: solid;
+  border-color: #E7E6E3;
+  border-width: 1px;
+  padding: 15px;
+}
+.configuracion p {
+  font-weight: bold;
+  color: #212529;
+}
+
+.svgConfigurar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.svgConfigurar svg {
+  fill: #177DA6;
+}
+.svgConfigurar p {
+  color: #495057;
+}
 
 .filtro {
-  border-right: 1px solid #ffffff;
-}
-.filtro form {
   background-color: #E7E6E3;
+  padding: 10px;
+  margin-top: 15px;
   display: flex;
   flex-direction: row;
   align-items: center;
-  margin: 10px 0px 0px;
+  justify-content: space-around;
 }
-.filtro button {
-  margin: 10px;
+
+.holderMeses {
+  width: 200px;
+  height: 40px;
+  padding-left: 10px;
+  background-color: #ffffff;
+  border: none;
+  font-weight: bold;
+  color: #A19279;
+}
+
+.meses {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.meses button {
+  margin: 5px;
   padding: 10px;
   background-color: #ffffff;
   border: none;
+  font-weight: bold;
+  color: #212529;
 }
 
-.buscar {
-  background-image: url("file:/C:/Users/lyveg/Downloads/search_FILL0_wght400_GRAD0_opsz48%20(1).svg");
+.border {
+  border-right: 3px solid #ffffff;
+  padding-right: 5px;
+}
+
+.holderBuscador {
+  width: 100px;
+  height: 35px;
+  padding-left: 10px;
+  background-color: #ffffff;
+  border: none;
+  font-weight: bold;
+  color: #A19279;
 }
 
 .gestiondeclaraciones {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  margin: 15px 0px;
+}
+
+.gestionfecha {
+  font-style: italic;
 }
 
 .gestioncajas {
@@ -193,19 +286,32 @@ nav li {
   border-style: solid;
   border-color: #E7E6E3;
   border-width: 1px;
-  margin: 20px 0px;
-  padding: 0px 10px 0px;
+  padding: 5px 20px;
+  margin-left: 15px;
 }
-.gestioncaja p {
+.gestioncaja h3 {
+  font-size: 14px;
+  padding-top: 9px;
+  width: 100px;
+}
+.gestioncaja #pGrande {
   color: #A19279;
+  font-size: 40px;
+}
+.gestioncaja #pMini {
+  color: #A19279;
+  font-size: 20px;
+  padding-top: 20px;
 }
 
-a {
+.gestionExportar {
+  padding-right: 10px;
+}
+.gestionExportar a {
   color: #177DA6;
   font-weight: bold;
 }
-
-#flecha {
+.gestionExportar #flecha {
   fill: #177DA6;
 }
 

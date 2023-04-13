@@ -1,18 +1,68 @@
+.tabla {
+    margin     : 5px;
+    font-family: $fontSignika;
+    font-weight: bold;
+}
+
 .tablaCabecera {
     display        : flex;
     flex-direction : row;
     justify-content: space-between;
     color          : $light-brown;
-    padding        : 10px;
-    
+    padding        : 5px;
+    margin         : 5px;
 
+    th {
+        display    : flex;
+        align-items: flex-end;
+
+        svg {
+            fill: $light-brown;
+        }
+
+        p {
+            color: $dark-beige;
+        }
+    }
 }
 
 .trTabla {
     display        : flex;
     flex-direction : row;
-    color          : $dark-gray;
-    justify-content: space-between; 
-        
+    justify-content: space-between;
+    align-items    : center;
+    color          : $medium-font;
+    padding        : 5px;
+    margin         : 5px;
 
+    td {
+        display    : flex;
+        align-items: flex-end;
+
+        .notificacionesTabla {
+            fill: $light-font;
+        }
+
+        .pdf {
+            fill: $blue-pdf;
+        }
+
+        a {
+            text-decoration: none;
+            color: $blue-pdf;
+
+        }
+    }
+}
+
+.checkbox {
+    appearance: none;
+    background-color: $white;
+    width: 20px;
+    height: 20px;
+    border-radius   : 2px;
+    border-width: 1px;
+    background-color: $white;
+    border-color    : $light-font;
+    border-style    :groove;
 }

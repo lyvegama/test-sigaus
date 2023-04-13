@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import Buscador from './Buscador';
 
-
 const Filtro = () => {
     const [answers, setAnswers] = useState("");
 
@@ -21,31 +20,31 @@ const Filtro = () => {
         { text: 'DIC', value: '01/12/2023 - 31/12/2023' },
     ]
 
-
-    const selectMonth = ({target}) => {
+    const selectMonth = ({ target }) => {
 
         const currentMonth = target.value;
         setAnswers(localStorage.setItem('month', currentMonth))
-
     }
 
     return (
         <div className='filtro'>
-
-           <form>
-            <h3>Filtrar</h3>
-           <input type="text" defaultValue={localStorage.getItem('month')} />
+            <div className="border">
+                <h3>Filtrar</h3>
+            </div>
+            <div className="border">
+                <input className="holderMeses" type="text" defaultValue={localStorage.getItem('month')} />
+            </div>
+            <div className="meses">
                 {months ? months.map((month, i) => (
-
                     <div key={i}>
-
                         <button onClick={selectMonth} value={month.value}>{month.text}</button>
-
                     </div>
 
                 )) : ""}
-<Buscador/>
-                </form>
+            </div>
+
+            <Buscador />
+
 
         </div>
     )

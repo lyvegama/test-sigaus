@@ -48,7 +48,7 @@ font-family: $fontSignika;
 }
 
 .headerDeclaraciones{
-  margin: 20px 350px 0px;
+  margin: 20px 400px 0px;
   display: flex;
   flex-direction: row;
   justify-content:space-between;
@@ -58,7 +58,7 @@ font-family: $fontSignika;
   background-color: $light-beige;
   display: flex;
   flex-direction: column;
-  margin: 0px 350px;
+  margin: 0px 400px 0px;
 }
 
 .colorBody {
@@ -88,8 +88,10 @@ font-family: $fontSignika;
 @import './components/header/nav.scss';
 @import './components/header/encabezado.scss';
 @import './components/header/botones.scss';
+@import './components/header/configuracion.scss';
 // Info
 @import './components/info/filtro.scss';
+@import './components/info/buscador.scss';
 @import './components/info/gestionDeclaraciones.scss';
 @import './components/info/paginacion.scss';
 @import './components/info/leyenda.scss';

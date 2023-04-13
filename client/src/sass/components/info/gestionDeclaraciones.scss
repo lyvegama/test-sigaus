@@ -2,7 +2,12 @@
     display        : flex;
     align-items    : center;
     justify-content: space-between;
+    margin         : 15px 0px;
 
+}
+
+.gestionfecha {
+    font-style: italic;
 }
 
 .gestioncajas {
@@ -17,20 +22,37 @@
     border-style    : solid;
     border-color    : $dark-beige;
     border-width    : 1px;
-    margin          : 20px 0px;
-    padding         : 0px 10px 0px;
+    padding         : 5px 20px;
+    margin-left     : 15px;
 
-    p {
-        color: $light-brown;
+    h3 {
+        font-size  : 14px;
+        padding-top: 9px;
+        width      : 100px;
+    }
+
+    #pGrande {
+        color    : $light-brown;
+        font-size: 40px;
+    }
+
+    #pMini {
+        color      : $light-brown;
+        font-size  : 20px;
+        padding-top: 20px;
     }
 
 }
 
-a{
-    color: $blue-pdf;
-    font-weight: bold;
-}
+.gestionExportar {
+    padding-right: 10px;
+    a {
+        color      : $blue-pdf;
+        font-weight: bold;
+    }
 
-#flecha {
-    fill: $blue-pdf;
+    #flecha {
+        fill: $blue-pdf;
+    }
+
 }
