@@ -1,0 +1,59 @@
+.gestiondeclaraciones {
+    display        : flex;
+    align-items    : center;
+    justify-content: space-between;
+    font-size      : 0.7rem;
+    margin         : 10px 0px;
+
+    p {
+        font-size: 0.7rem;
+    }
+}
+
+.gestionfecha {
+    font-style: italic;
+    font-size : 0.6rem;
+}
+
+.gestioncajas {
+    display       : flex;
+    flex-direction: row;
+}
+
+.gestioncaja {
+    background-color: $white;
+    display         : flex;
+    flex-direction  : row;
+    align-items     : center;
+    border-style    : solid;
+    border-color    : $dark-beige;
+    border-width    : 1px;
+    margin-left     : 15px;
+    padding         : 5px;
+
+    h3 {
+        font-size: 0.8rem;
+        width    : 100px;
+    }
+
+    #pGrande {
+        color    : $light-brown;
+        font-size: 2rem;
+    }
+
+    #pMini {
+        color      : $light-brown;
+        font-size  : 1rem;
+        padding-top: 15px;
+    }
+
+}
+
+.gestionExportar {
+    padding-right: 10px;
+
+    a {
+        color      : $blue-pdf;
+        font-weight: bold;
+    }
+}

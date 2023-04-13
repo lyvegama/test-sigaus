@@ -1,0 +1,119 @@
+table {
+    font-family    : $fontSignika;
+    width          : 100%;
+    border-collapse: collapse;
+}
+
+table tr:nth-child(odd) {
+    background-color: $white;
+}
+
+.tablaCabecera {
+    color: $light-brown;
+
+    th {
+        background-color: $light-beige;
+        padding         : 7px 0px;
+
+        span {
+            color: $light-brown;
+        }
+
+        p {
+            color: $dark-beige;
+        }
+    }
+}
+
+.trTabla {
+    color: $medium-font;
+
+    td {
+        padding: 4px 0px;
+
+        .notificacionesTabla {
+            color: $light-font;
+        }
+
+        span {
+            text-decoration: none;
+            color          : $blue-pdf;
+            font-size      : 1rem;
+        }
+
+        a {
+            text-decoration: none;
+            color          : $blue-pdf;
+            font-size      : 0.8rem;
+        }
+    }
+}
+
+.checkbox {
+    appearance      : none;
+    width           : 15px;
+    height          : 15px;
+    border-radius   : 1px;
+    border-width    : 2px;
+    background-color: $white;
+    border-color    : $light-beige;
+    border-style    : groove;
+}
+
+table thead th:nth-child(2),
+table tbody td:nth-child(2) {
+    text-align: left;
+}
+
+table thead th:nth-child(3),
+table tbody td:nth-child(3) {
+    text-align    : center;
+    vertical-align: middle;
+}
+
+table thead th:nth-child(4),
+table tbody td:nth-child(4) {
+    text-align    : center;
+    vertical-align: middle;
+}
+
+table thead th:nth-child(5),
+table tbody td:nth-child(5) {
+    text-align    : left;
+    vertical-align: middle;
+}
+
+table thead th:nth-child(6),
+table tbody td:nth-child(6) {
+    text-align    : center;
+    vertical-align: middle;
+}
+
+table thead th:nth-child(7),
+table tbody td:nth-child(7) {
+    text-align    : center;
+    vertical-align: middle;
+}
+
+table thead th:nth-child(8),
+table tbody td:nth-child(8) {
+    text-align    : center;
+    vertical-align: middle;
+}
+
+table thead th:nth-child(9),
+table tbody td:nth-child(9) {
+    text-align    : center;
+    vertical-align: middle;
+    font-weight   : bold;
+}
+
+table thead th:nth-child(10),
+table tbody td:nth-child(10) {
+    text-align    : center;
+    vertical-align: middle;
+
+    span {
+        color: $light-font;
+    }
+}

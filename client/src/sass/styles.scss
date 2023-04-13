@@ -1,0 +1,95 @@
+//? Variables - Main Colors
+$white: #ffffff;
+$light-beige: #F5F4F1;
+$dark-beige: #E7E6E3;
+$dark-gray: #343A40;
+$light-brown: #A19279;
+$mustard: #BFA317;
+$red-notification: #F2522E;
+$blue-pdf: #177DA6;
+
+//? FlexBox
+
+
+
+//? Variables - Font Color & Styles
+
+@font-face {
+  font-family: 'Signika';
+  src: url('../../public/fonts/Signika-VariableFont_wght.ttf');
+}
+// fonts variables
+$fontSignika: 'Signika';
+
+// font colors
+$dark-font: #212529;
+$medium-font: #495057;
+$light-font: #B0B4B3;
+
+//? Estilos globales
+body {
+  background-color: $light-beige;
+  font-size: 0.8rem;
+}
+
+* {
+  margin:0px;
+  padding:0px;
+  box-sizing: border-box;
+}
+
+*:visited{
+  color: inherit;
+}
+
+span{
+  margin-top: 1px;
+}
+
+p, h1, h2, h3, a {
+color: $medium-font;
+font-family: $fontSignika;
+}
+
+$shadow: 1px 1px 7px -3px $dark-gray;
+
+.container{
+  max-width: 900px;
+  margin: 0 auto;
+}
+// Components: Nav, Encabezado, Configuración, Botones
+.headerWhite{
+  background-color: $white;
+  width: 100%;
+}
+
+.footer{
+  display: flex;
+  justify-content: flex-end;
+
+}
+
+
+//? Import
+
+//* Pages
+@import './pages/declaraciones.scss';
+@import './pages/financiacion.scss';
+@import './pages/informes.scss';
+@import './pages/inicio.scss';
+@import './pages/instalaciones.scss';
+
+//* Components
+// Content
+@import './components/content/tabla.scss';
+// Header
+@import './components/header/nav.scss';
+@import './components/header/botones.scss';
+@import './components/header/configuracion.scss';
+@import './components/header/encabezado.scss';
+// Info
+@import './components/info/filtro.scss';
+@import './components/info/buscador.scss';
+@import './components/info/gestionDeclaraciones.scss';
+@import './components/info/paginacion.scss';
+@import './components/info/leyenda.scss';
