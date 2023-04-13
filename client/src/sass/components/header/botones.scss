@@ -1,8 +1,8 @@
 // Botones Crear, Subir Archivo e Histórico de archivos
 
 .ulEncabezado {
-    margin: 0px 400px;
-    width          : 600px;
+
+    width          : 500px;
     display        : flex;
     align-items    : center;
     justify-content: space-between;
@@ -26,7 +26,7 @@
     height       : 30px;
     border-right : 1px solid $dark-beige;
     padding-right: 20px;
-    svg {
-        fill: $light-font;
+    span {
+        color: $light-font;
     }
 }

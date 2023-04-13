@@ -28,18 +28,22 @@ $light-font: #B0B4B3;
 
 //? Estilos globales
 body {
-  display: flex;
-  flex-direction: column;
-  background-color: $white;
+  background-color: $light-beige;
+  font-size: 0.8rem;
 }
 
 * {
   margin:0px;
   padding:0px;
+  box-sizing: border-box;
 }
 
 *:visited{
   color: inherit;
+}
+
+span{
+  margin-top: 1px;
 }
 
 p, h1, h2, h3, a {
@@ -47,30 +51,24 @@ color: $medium-font;
 font-family: $fontSignika;
 }
 
-.headerDeclaraciones{
-  margin: 20px 400px 0px;
-  display: flex;
-  flex-direction: row;
-  justify-content:space-between;
-}
+$shadow: 1px 1px 7px -3px $dark-gray;
 
-.cuerpoDeclaraciones {
-  background-color: $light-beige;
-  display: flex;
-  flex-direction: column;
-  margin: 0px 400px 0px;
+.container{
+  max-width: 900px;
+  margin: 0 auto;
 }
-
-.colorBody {
-  background-color: $light-beige;
+// Components: Nav, Encabezado, Configuración, Botones
+.headerWhite{
+  background-color: $white;
   width: 100%;
 }
 
-.footerDeclaraciones{
+.footer{
   display: flex;
   justify-content: flex-end;
-  height: 60px;
+
 }
+
 
 //? Import
 
@@ -86,9 +84,9 @@ font-family: $fontSignika;
 @import './components/content/tabla.scss';
 // Header
 @import './components/header/nav.scss';
-@import './components/header/encabezado.scss';
 @import './components/header/botones.scss';
 @import './components/header/configuracion.scss';
+@import './components/header/encabezado.scss';
 // Info
 @import './components/info/filtro.scss';
 @import './components/info/buscador.scss';

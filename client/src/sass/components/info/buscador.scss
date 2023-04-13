@@ -1,9 +1,10 @@
 .holderBuscador{
-    width: 100px;
-    height: 35px;
+    width: 110px;
+    height: 39px;
     padding-left: 10px;
     background-color: $white;
     border          : none;
     font-weight     : bold;
     color           : $light-brown;
+    box-shadow: $shadow;
 }

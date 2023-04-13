@@ -1,23 +1,22 @@
-.tabla {
-    margin     : 5px;
-    font-family: $fontSignika;
-    font-weight: bold;
+table {
+    font-family    : $fontSignika;
+    width          : 100%;
+    border-collapse: collapse;
+}
+
+table tr:nth-child(odd) {
+    background-color: $white;
 }
 
 .tablaCabecera {
-    display        : flex;
-    flex-direction : row;
-    justify-content: space-between;
-    color          : $light-brown;
-    padding        : 5px;
-    margin         : 5px;
+    color: $light-brown;
 
     th {
-        display    : flex;
-        align-items: flex-end;
+        background-color: $light-beige;
+        padding         : 7px 0px;
 
-        svg {
-            fill: $light-brown;
+        span {
+            color: $light-brown;
         }
 
         p {
@@ -27,42 +26,94 @@
 }
 
 .trTabla {
-    display        : flex;
-    flex-direction : row;
-    justify-content: space-between;
-    align-items    : center;
-    color          : $medium-font;
-    padding        : 5px;
-    margin         : 5px;
+    color: $medium-font;
 
     td {
-        display    : flex;
-        align-items: flex-end;
+        padding: 4px 0px;
 
         .notificacionesTabla {
-            fill: $light-font;
+            color: $light-font;
         }
 
-        .pdf {
-            fill: $blue-pdf;
+        span {
+            text-decoration: none;
+            color          : $blue-pdf;
+            font-size      : 1rem;
         }
 
         a {
             text-decoration: none;
-            color: $blue-pdf;
-
+            color          : $blue-pdf;
+            font-size      : 0.8rem;
         }
     }
 }
 
 .checkbox {
-    appearance: none;
+    appearance      : none;
+    width           : 15px;
+    height          : 15px;
+    border-radius   : 1px;
+    border-width    : 2px;
     background-color: $white;
-    width: 20px;
-    height: 20px;
-    border-radius   : 2px;
-    border-width: 1px;
-    background-color: $white;
-    border-color    : $light-font;
-    border-style    :groove;
+    border-color    : $light-beige;
+    border-style    : groove;
+}
+
+table thead th:nth-child(2),
+table tbody td:nth-child(2) {
+    text-align: left;
+}
+
+table thead th:nth-child(3),
+table tbody td:nth-child(3) {
+    text-align    : center;
+    vertical-align: middle;
+}
+
+table thead th:nth-child(4),
+table tbody td:nth-child(4) {
+    text-align    : center;
+    vertical-align: middle;
+}
+
+table thead th:nth-child(5),
+table tbody td:nth-child(5) {
+    text-align    : left;
+    vertical-align: middle;
+}
+
+table thead th:nth-child(6),
+table tbody td:nth-child(6) {
+    text-align    : center;
+    vertical-align: middle;
+}
+
+table thead th:nth-child(7),
+table tbody td:nth-child(7) {
+    text-align    : center;
+    vertical-align: middle;
+}
+
+table thead th:nth-child(8),
+table tbody td:nth-child(8) {
+    text-align    : center;
+    vertical-align: middle;
+}
+
+table thead th:nth-child(9),
+table tbody td:nth-child(9) {
+    text-align    : center;
+    vertical-align: middle;
+    font-weight   : bold;
+}
+
+table thead th:nth-child(10),
+table tbody td:nth-child(10) {
+    text-align    : center;
+    vertical-align: middle;
+
+    span {
+        color: $light-font;
+    }
 }

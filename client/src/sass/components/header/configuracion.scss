@@ -1,21 +1,21 @@
 .configuracion {
-    width       : 130px;
     border-style: solid;
     border-color: $dark-beige;
     border-width: 1px;
     padding: 15px;
+    width: 140px;
     p{
         font-weight: bold;
         color: $dark-font;
     }
 }
 
-.svgConfigurar {
+.spanConfigurar {
     display        : flex;
     align-items    : center;
     justify-content: center;
-    svg {
-        fill: $blue-pdf;
+    span {
+        color: $blue-pdf;
     }
     p{
         color: $medium-font;

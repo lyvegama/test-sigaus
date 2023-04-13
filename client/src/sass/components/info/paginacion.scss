@@ -1,22 +1,31 @@
 .paginacion {
     display    : flex;
     align-items: center;
-    margin-right: 400px;
+    font-size: 0.9rem;
+    span{
+        color: $light-font;
+        font-size: 1.5rem;
+    }
+    p{
+        color: $light-font;
+        margin-right: 20px;
+    }
 }
 
 .botonesPaginacion {
     button {
-        width           : 40px;
-        height          : 40px;
+        width           : 30px;
+        height          : 30px;
         margin          : 0px 10px;
         border-style    : none;
         background-color: transparent;
+        color: $light-font;
     }
 
     #active {
         border-radius   : 2px;
         background-color: $white;
-        color           : $dark-gray;
+        color: $light-font;
         border-color    : $dark-beige;
         border-style    : solid;
     }
