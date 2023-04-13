@@ -1,23 +1,45 @@
 .filtro {
-    border-right: 1px solid $white;
-    
-    form {
-        background-color: $dark-beige;
-        display         : flex;
-        flex-direction  : row;
-        align-items: center;
-        margin: 10px 0px 0px;
-    }
+    margin-top      : 15px;
+    padding: 10px;
+    display         : flex;
+    flex-direction  : row;
+    align-items     : center;
+    justify-content : space-around;
+    background-color: $dark-beige;
+}
+
+.holderMeses {
+    width           : 180px;
+    height          : 40px;
+    padding-left    : 5px;
+    background-color: $white;
+    border          : none;
+    font-weight     : bold;
+    color           : $light-brown;
+    box-shadow: $shadow;
+}
+
+.meses {
+    display        : flex;
+    flex-direction : row;
+    align-items    : center;
+    justify-content: center;
 
     button {
-        margin: 10px;
-        padding: 10px;
+        font-size: 0.6rem;
+        margin          : 2px;
+        padding         : 14px 10px;
         background-color: $white;
-        border: none;
-        
+        border          : none;
+        font-weight     : bold;
+        color           : $dark-font;
     }
 }
 
-.buscar {
-    background-image: url("file:/C:/Users/lyveg/Downloads/search_FILL0_wght400_GRAD0_opsz48%20(1).svg");
+.border {
+    border-left: 3px solid $white;
+    border-right: 3px solid $white;
+    padding: 0px 5px;
+
+
 }

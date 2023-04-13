@@ -3,18 +3,22 @@
   src: url("../../public/fonts/Signika-VariableFont_wght.ttf");
 }
 body {
-  display: flex;
-  flex-direction: column;
-  background-color: #ffffff;
+  background-color: #F5F4F1;
+  font-size: 0.8rem;
 }
 
 * {
   margin: 0px;
   padding: 0px;
+  box-sizing: border-box;
 }
 
 *:visited {
   color: inherit;
+}
+
+span {
+  margin-top: 1px;
 }
 
 p, h1, h2, h3, a {
@@ -22,44 +26,132 @@ p, h1, h2, h3, a {
   font-family: "Signika";
 }
 
-.headerDeclaraciones {
-  margin: 20px 350px 0px;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+.container {
+  max-width: 900px;
+  margin: 0 auto;
 }
 
-.cuerpoDeclaraciones {
-  background-color: #F5F4F1;
-  display: flex;
-  flex-direction: column;
-  margin: 0px 350px;
-}
-
-.colorBody {
-  background-color: #F5F4F1;
+.headerWhite {
+  background-color: #ffffff;
   width: 100%;
 }
 
-.footerDeclaraciones {
+.footer {
   display: flex;
   justify-content: flex-end;
-  height: 60px;
+}
+
+table {
+  font-family: "Signika";
+  width: 100%;
+  border-collapse: collapse;
+}
+
+table tr:nth-child(odd) {
+  background-color: #ffffff;
 }
 
 .tablaCabecera {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
   color: #A19279;
-  padding: 10px;
+}
+.tablaCabecera th {
+  background-color: #F5F4F1;
+  padding: 7px 0px;
+}
+.tablaCabecera th span {
+  color: #A19279;
+}
+.tablaCabecera th p {
+  color: #E7E6E3;
 }
 
 .trTabla {
-  display: flex;
-  flex-direction: row;
-  color: #343A40;
-  justify-content: space-between;
+  color: #495057;
+}
+.trTabla td {
+  padding: 4px 0px;
+}
+.trTabla td .notificacionesTabla {
+  color: #B0B4B3;
+}
+.trTabla td span {
+  text-decoration: none;
+  color: #177DA6;
+  font-size: 1rem;
+}
+.trTabla td a {
+  text-decoration: none;
+  color: #177DA6;
+  font-size: 0.8rem;
+}
+
+.checkbox {
+  appearance: none;
+  width: 15px;
+  height: 15px;
+  border-radius: 1px;
+  border-width: 2px;
+  background-color: #ffffff;
+  border-color: #F5F4F1;
+  border-style: groove;
+}
+
+table thead th:nth-child(2),
+table tbody td:nth-child(2) {
+  text-align: left;
+}
+
+table thead th:nth-child(3),
+table tbody td:nth-child(3) {
+  text-align: center;
+  vertical-align: middle;
+}
+
+table thead th:nth-child(4),
+table tbody td:nth-child(4) {
+  text-align: center;
+  vertical-align: middle;
+}
+
+table thead th:nth-child(5),
+table tbody td:nth-child(5) {
+  text-align: left;
+  vertical-align: middle;
+}
+
+table thead th:nth-child(6),
+table tbody td:nth-child(6) {
+  text-align: center;
+  vertical-align: middle;
+}
+
+table thead th:nth-child(7),
+table tbody td:nth-child(7) {
+  text-align: center;
+  vertical-align: middle;
+}
+
+table thead th:nth-child(8),
+table tbody td:nth-child(8) {
+  text-align: center;
+  vertical-align: middle;
+}
+
+table thead th:nth-child(9),
+table tbody td:nth-child(9) {
+  text-align: center;
+  vertical-align: middle;
+  font-weight: bold;
+}
+
+table thead th:nth-child(10),
+table tbody td:nth-child(10) {
+  text-align: center;
+  vertical-align: middle;
+}
+table thead th:nth-child(10) span,
+table tbody td:nth-child(10) span {
+  color: #B0B4B3;
 }
 
 nav {
@@ -67,7 +159,7 @@ nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  box-shadow: 0px 0px 7px #343A40;
+  box-shadow: 1px 1px 7px -3px #343A40;
 }
 nav img {
   width: 150px;
@@ -87,8 +179,9 @@ nav li {
 }
 
 .ulNavCenter {
+  margin-left: 120px;
   background-color: #ffffff;
-  width: 1000px;
+  width: 700px;
 }
 .ulNavCenter ul {
   display: flex;
@@ -100,7 +193,7 @@ nav li {
 }
 
 #logout {
-  background-color: #343A40;
+  background-color: #495057;
   height: 50px;
 }
 #logout svg {
@@ -111,28 +204,8 @@ nav li {
   padding: 0px 20px;
 }
 
-.pagEncabezado {
-  width: 400px;
-}
-
-.configuracion {
-  width: 140px;
-  border-style: solid;
-  border-color: #E7E6E3;
-  border-width: 1px;
-  margin: 20px 0px;
-  padding: 0px 10px 0px;
-}
-
-.svgConfigurar {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
 .ulEncabezado {
-  margin: 0px 350px;
-  width: 600px;
+  width: 500px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -143,8 +216,9 @@ nav li {
 }
 .botones ul a {
   text-decoration: none;
+  color: #B0B4B3;
 }
-.botones ul li, .botones ul svg {
+.botones ul li {
   list-style-type: none;
 }
 
@@ -153,32 +227,115 @@ nav li {
   border-right: 1px solid #E7E6E3;
   padding-right: 20px;
 }
+.liEncabezado span {
+  color: #B0B4B3;
+}
+
+.configuracion {
+  border-style: solid;
+  border-color: #E7E6E3;
+  border-width: 1px;
+  padding: 15px;
+  width: 140px;
+}
+.configuracion p {
+  font-weight: bold;
+  color: #212529;
+}
+
+.spanConfigurar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.spanConfigurar span {
+  color: #177DA6;
+}
+.spanConfigurar p {
+  color: #495057;
+}
+
+.encabezado {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+  background-color: #ffffff;
+}
+
+.encabezadoDeclaraciones {
+  display: flex;
+  flex-direction: column;
+  width: 450px;
+}
 
 .filtro {
-  border-right: 1px solid #ffffff;
-}
-.filtro form {
-  background-color: #E7E6E3;
+  margin-top: 15px;
+  padding: 10px;
   display: flex;
   flex-direction: row;
   align-items: center;
-  margin: 10px 0px 0px;
-}
-.filtro button {
-  margin: 10px;
-  padding: 10px;
-  background-color: #ffffff;
-  border: none;
+  justify-content: space-around;
+  background-color: #E7E6E3;
 }
 
-.buscar {
-  background-image: url("file:/C:/Users/lyveg/Downloads/search_FILL0_wght400_GRAD0_opsz48%20(1).svg");
+.holderMeses {
+  width: 180px;
+  height: 40px;
+  padding-left: 5px;
+  background-color: #ffffff;
+  border: none;
+  font-weight: bold;
+  color: #A19279;
+  box-shadow: 1px 1px 7px -3px #343A40;
+}
+
+.meses {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.meses button {
+  font-size: 0.6rem;
+  margin: 2px;
+  padding: 14px 10px;
+  background-color: #ffffff;
+  border: none;
+  font-weight: bold;
+  color: #212529;
+}
+
+.border {
+  border-left: 3px solid #ffffff;
+  border-right: 3px solid #ffffff;
+  padding: 0px 5px;
+}
+
+.holderBuscador {
+  width: 110px;
+  height: 39px;
+  padding-left: 10px;
+  background-color: #ffffff;
+  border: none;
+  font-weight: bold;
+  color: #A19279;
+  box-shadow: 1px 1px 7px -3px #343A40;
 }
 
 .gestiondeclaraciones {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  font-size: 0.7rem;
+  margin: 10px 0px;
+}
+.gestiondeclaraciones p {
+  font-size: 0.7rem;
+}
+
+.gestionfecha {
+  font-style: italic;
+  font-size: 0.6rem;
 }
 
 .gestioncajas {
@@ -190,61 +347,83 @@ nav li {
   background-color: #ffffff;
   display: flex;
   flex-direction: row;
+  align-items: center;
   border-style: solid;
   border-color: #E7E6E3;
   border-width: 1px;
-  margin: 20px 0px;
-  padding: 0px 10px 0px;
+  margin-left: 15px;
+  padding: 5px;
 }
-.gestioncaja p {
+.gestioncaja h3 {
+  font-size: 0.8rem;
+  width: 100px;
+}
+.gestioncaja #pGrande {
   color: #A19279;
+  font-size: 2rem;
+}
+.gestioncaja #pMini {
+  color: #A19279;
+  font-size: 1rem;
+  padding-top: 15px;
 }
 
-a {
+.gestionExportar {
+  padding-right: 10px;
+}
+.gestionExportar a {
   color: #177DA6;
   font-weight: bold;
-}
-
-#flecha {
-  fill: #177DA6;
 }
 
 .paginacion {
   display: flex;
   align-items: center;
-  margin-right: 400px;
+  font-size: 0.9rem;
+}
+.paginacion span {
+  color: #B0B4B3;
+  font-size: 1.5rem;
+}
+.paginacion p {
+  color: #B0B4B3;
+  margin-right: 20px;
 }
 
 .botonesPaginacion button {
-  width: 40px;
-  height: 40px;
+  width: 30px;
+  height: 30px;
   margin: 0px 10px;
   border-style: none;
   background-color: transparent;
+  color: #B0B4B3;
 }
 .botonesPaginacion #active {
   border-radius: 2px;
   background-color: #ffffff;
-  color: #343A40;
+  color: #B0B4B3;
   border-color: #E7E6E3;
   border-style: solid;
 }
 
 .leyenda {
-  margin-top: 2px;
-  padding-right: 20px;
+  margin: 5px;
+  padding: 5px 30px;
   display: flex;
   flex-direction: column;
 }
 .leyenda p {
-  font-size: 15px;
+  font-size: 0.7rem;
   margin: 0px;
+  font-weight: bold;
 }
 .leyenda #pendiente {
-  fill: #F2522E;
+  font-size: 0.8rem;
+  color: #F2522E;
 }
 .leyenda #espera {
-  fill: rgb(240, 150, 33);
+  font-size: 0.8rem;
+  color: rgb(240, 150, 33);
 }
 
 /*# sourceMappingURL=styles.css.map */

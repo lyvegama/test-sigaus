@@ -1,30 +1,32 @@
 // Botones Crear, Subir Archivo e Histórico de archivos
 
 .ulEncabezado {
-    margin: 0px 350px;
-    width: 600px;
-    display         : flex;
-    align-items     : center;
-    justify-content : space-between;
+
+    width          : 500px;
+    display        : flex;
+    align-items    : center;
+    justify-content: space-between;
 
 }
 
-.botones ul{
+.botones ul {
     padding: 20px;
 
-    
     a {
         text-decoration: none;
+        color          : $light-font;
     }
-    
-    li, svg {
+
+    li {
         list-style-type: none;
     }
 }
 
-.liEncabezado{
-    height: 30px;
-    border-right: 1px solid $dark-beige;
+.liEncabezado {
+    height       : 30px;
+    border-right : 1px solid $dark-beige;
     padding-right: 20px;
+    span {
+        color: $light-font;
+    }
 }
-

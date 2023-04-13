@@ -3,31 +3,29 @@ import Nav from '../components/Header/Nav';
 import Encabezado from '../components/Header/Encabezado';
 import Botones from '../components/Header/Botones';
 import Configuracion from '../components/Info/Configuracion';
-import Tabla from '../components/Content/Tabla';
 import Paginacion from '../components/Info/Paginacion';
-import Filtro from '../components/Info/Filtro';
 import Leyenda from '../components/Info/Leyenda';
-import GestionDeclaraciones from '../components/Info/GestionDeclaraciones';
+import Filtrado from '../components/Content/Filtrado';
 
 const Declaraciones = () => {
 
   return (
     <div className='declaracionesHome'>
-      <Nav />
-      <div className='headerDeclaraciones'>
-        <Encabezado />
-        <Configuracion />
+      <div className='headerWhite'>
+        <Nav />
+        <div className='encabezado container'>
+          <Encabezado />
+          <Configuracion />
+        </div>
+        <div className='container'>
+          <Botones />
+        </div>
       </div>
-      <Botones />
-      <div className='colorBody'>
-        <div className='cuerpoDeclaraciones'>
-          <Filtro />
-          <GestionDeclaraciones />
-          <Tabla />
-          <div className='footerDeclaraciones'>
-            <Paginacion />
-            <Leyenda />
-          </div>
+      <div className='datosTabla container'>
+        <Filtrado />
+        <div className='footer container'>
+          <Paginacion />
+          <Leyenda />
         </div>
       </div>
     </div>

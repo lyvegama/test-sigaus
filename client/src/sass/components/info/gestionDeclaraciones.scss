@@ -2,7 +2,17 @@
     display        : flex;
     align-items    : center;
     justify-content: space-between;
+    font-size      : 0.7rem;
+    margin         : 10px 0px;
 
+    p {
+        font-size: 0.7rem;
+    }
+}
+
+.gestionfecha {
+    font-style: italic;
+    font-size : 0.6rem;
 }
 
 .gestioncajas {
@@ -14,23 +24,36 @@
     background-color: $white;
     display         : flex;
     flex-direction  : row;
+    align-items     : center;
     border-style    : solid;
     border-color    : $dark-beige;
     border-width    : 1px;
-    margin          : 20px 0px;
-    padding         : 0px 10px 0px;
+    margin-left     : 15px;
+    padding         : 5px;
 
-    p {
-        color: $light-brown;
+    h3 {
+        font-size: 0.8rem;
+        width    : 100px;
+    }
+
+    #pGrande {
+        color    : $light-brown;
+        font-size: 2rem;
+    }
+
+    #pMini {
+        color      : $light-brown;
+        font-size  : 1rem;
+        padding-top: 15px;
     }
 
 }
 
-a{
-    color: $blue-pdf;
-    font-weight: bold;
-}
+.gestionExportar {
+    padding-right: 10px;
 
-#flecha {
-    fill: $blue-pdf;
+    a {
+        color      : $blue-pdf;
+        font-weight: bold;
+    }
 }
