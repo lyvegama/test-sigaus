@@ -1,18 +1,56 @@
 nav {
+    height         : 50px;
     display        : flex;
+    align-items    : center;
     justify-content: space-between;
-    background-color: $white;
-    padding: 10px;
-    box-shadow: 10px 2px 10px rgb(100, 100, 100);
+    box-shadow     : 0px 0px 7px $dark-gray;
+
+    img {
+        width: 150px;
+        padding-left: 15px;
+    }
+
+    ul {
+        display: flex;
+        color  : $dark-gray;
+    }
+
+    a {
+        text-decoration: none;
+        color: $medium-font;
+    }
+
+    li {
+        display    : flex;
+        align-items: center;
+    }
 }
 
-.ulNav {
+.ulNavCenter {
     background-color: $white;
-    display        : flex;
-    justify-content: space-evenly;
+    width           : 1000px;
 
+    ul {
+        display        : flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    .activeNav {
+        border-bottom: 9px solid $mustard;
+    }
 }
 
-.nav-img {
-    width: 200px;
+#logout {
+    background-color: $dark-gray;
+    height         : 50px;
+    svg {
+        fill: $white;
+    }
+}
+
+.iconNav{
+    li {
+        padding: 0px 20px;
+    }
 }

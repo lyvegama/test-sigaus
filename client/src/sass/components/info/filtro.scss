@@ -1,0 +1,23 @@
+.filtro {
+    border-right: 1px solid $white;
+    
+    form {
+        background-color: $dark-beige;
+        display         : flex;
+        flex-direction  : row;
+        align-items: center;
+        margin: 10px 0px 0px;
+    }
+
+    button {
+        margin: 10px;
+        padding: 10px;
+        background-color: $white;
+        border: none;
+        
+    }
+}
+
+.buscar {
+    background-image: url("file:/C:/Users/lyveg/Downloads/search_FILL0_wght400_GRAD0_opsz48%20(1).svg");
+}

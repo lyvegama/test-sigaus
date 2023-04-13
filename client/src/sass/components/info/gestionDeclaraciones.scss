@@ -1,0 +1,36 @@
+.gestiondeclaraciones {
+    display        : flex;
+    align-items    : center;
+    justify-content: space-between;
+
+}
+
+.gestioncajas {
+    display       : flex;
+    flex-direction: row;
+}
+
+.gestioncaja {
+    background-color: $white;
+    display         : flex;
+    flex-direction  : row;
+    border-style    : solid;
+    border-color    : $dark-beige;
+    border-width    : 1px;
+    margin          : 20px 0px;
+    padding         : 0px 10px 0px;
+
+    p {
+        color: $light-brown;
+    }
+
+}
+
+a{
+    color: $blue-pdf;
+    font-weight: bold;
+}
+
+#flecha {
+    fill: $blue-pdf;
+}

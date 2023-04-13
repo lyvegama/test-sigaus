@@ -1,92 +1,250 @@
 @font-face {
-  font-family: "Source";
-  src: url("../../public/fonts/SourceSansPro-Regular.ttf");
+  font-family: "Signika";
+  src: url("../../public/fonts/Signika-VariableFont_wght.ttf");
 }
-@font-face {
-  font-family: "Isidora";
-  src: url("../../public/fonts/IsidoraSansAlt-Regular.ttf");
+body {
+  display: flex;
+  flex-direction: column;
+  background-color: #ffffff;
 }
+
 * {
-  background-color: #F5F4F1;
-  list-style: none;
+  margin: 0px;
+  padding: 0px;
 }
 
 *:visited {
   color: inherit;
 }
 
-nav {
-  display: flex;
-  justify-content: space-between;
-  background-color: #ffffff;
-  padding: 10px;
-  box-shadow: 10px 2px 10px rgb(100, 100, 100);
+p, h1, h2, h3, a {
+  color: #495057;
+  font-family: "Signika";
 }
 
-.ulNav {
-  background-color: #ffffff;
-  display: flex;
-  justify-content: space-evenly;
-}
-
-.nav-img {
-  width: 200px;
-}
-
-.pagination {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  margin-top: 1rem;
-}
-
-.pagination button {
-  width: 40px;
-  height: 40px;
-  font-family: inherit;
-  font-weight: 600;
-  font-size: 16px;
-  margin: 0 10px;
-  border-radius: 6px;
-  cursor: pointer;
-  transition: all 0.3s ease;
-  background: transparent;
-  color: #eee;
-  border-color: #eee;
-}
-
-.pagination button.active {
-  font-weight: 900;
-  border-color: #101010;
-  background: #ffe400;
-  color: #101010;
-}
-
-.ulLista {
+.headerDeclaraciones {
+  margin: 20px 350px 0px;
   display: flex;
   flex-direction: row;
-  color: white;
-  padding-right: 50px;
-  list-style: none;
-  text-align: center;
+  justify-content: space-between;
 }
 
-.ulLista li {
-  margin-right: 150px;
-  text-align: center;
+.cuerpoDeclaraciones {
+  background-color: #F5F4F1;
+  display: flex;
+  flex-direction: column;
+  margin: 0px 350px;
 }
 
-.ulLydia {
+.colorBody {
+  background-color: #F5F4F1;
+  width: 100%;
+}
+
+.footerDeclaraciones {
+  display: flex;
+  justify-content: flex-end;
+  height: 60px;
+}
+
+.tablaCabecera {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  color: #A19279;
+  padding: 10px;
+}
+
+.trTabla {
   display: flex;
   flex-direction: row;
   color: #343A40;
-  padding-right: 50px;
-  list-style: none;
+  justify-content: space-between;
 }
 
-.ulLydia li {
-  margin-right: 70px;
-  text-align: center;
+nav {
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0px 0px 7px #343A40;
+}
+nav img {
+  width: 150px;
+  padding-left: 15px;
+}
+nav ul {
+  display: flex;
+  color: #343A40;
+}
+nav a {
+  text-decoration: none;
+  color: #495057;
+}
+nav li {
+  display: flex;
+  align-items: center;
+}
+
+.ulNavCenter {
+  background-color: #ffffff;
+  width: 1000px;
+}
+.ulNavCenter ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.ulNavCenter .activeNav {
+  border-bottom: 9px solid #BFA317;
+}
+
+#logout {
+  background-color: #343A40;
+  height: 50px;
+}
+#logout svg {
+  fill: #ffffff;
+}
+
+.iconNav li {
+  padding: 0px 20px;
+}
+
+.pagEncabezado {
+  width: 400px;
+}
+
+.configuracion {
+  width: 140px;
+  border-style: solid;
+  border-color: #E7E6E3;
+  border-width: 1px;
+  margin: 20px 0px;
+  padding: 0px 10px 0px;
+}
+
+.svgConfigurar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.ulEncabezado {
+  margin: 0px 350px;
+  width: 600px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.botones ul {
+  padding: 20px;
+}
+.botones ul a {
+  text-decoration: none;
+}
+.botones ul li, .botones ul svg {
+  list-style-type: none;
+}
+
+.liEncabezado {
+  height: 30px;
+  border-right: 1px solid #E7E6E3;
+  padding-right: 20px;
+}
+
+.filtro {
+  border-right: 1px solid #ffffff;
+}
+.filtro form {
+  background-color: #E7E6E3;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 10px 0px 0px;
+}
+.filtro button {
+  margin: 10px;
+  padding: 10px;
+  background-color: #ffffff;
+  border: none;
+}
+
+.buscar {
+  background-image: url("file:/C:/Users/lyveg/Downloads/search_FILL0_wght400_GRAD0_opsz48%20(1).svg");
+}
+
+.gestiondeclaraciones {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.gestioncajas {
+  display: flex;
+  flex-direction: row;
+}
+
+.gestioncaja {
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: row;
+  border-style: solid;
+  border-color: #E7E6E3;
+  border-width: 1px;
+  margin: 20px 0px;
+  padding: 0px 10px 0px;
+}
+.gestioncaja p {
+  color: #A19279;
+}
+
+a {
+  color: #177DA6;
+  font-weight: bold;
+}
+
+#flecha {
+  fill: #177DA6;
+}
+
+.paginacion {
+  display: flex;
+  align-items: center;
+  margin-right: 400px;
+}
+
+.botonesPaginacion button {
+  width: 40px;
+  height: 40px;
+  margin: 0px 10px;
+  border-style: none;
+  background-color: transparent;
+}
+.botonesPaginacion #active {
+  border-radius: 2px;
+  background-color: #ffffff;
+  color: #343A40;
+  border-color: #E7E6E3;
+  border-style: solid;
+}
+
+.leyenda {
+  margin-top: 2px;
+  padding-right: 20px;
+  display: flex;
+  flex-direction: column;
+}
+.leyenda p {
+  font-size: 15px;
+  margin: 0px;
+}
+.leyenda #pendiente {
+  fill: #F2522E;
+}
+.leyenda #espera {
+  fill: rgb(240, 150, 33);
 }
 
 /*# sourceMappingURL=styles.css.map */
