@@ -4,10 +4,10 @@ const GestionDeclaraciones = () => {
 
     return (
         <div className='gestiondeclaraciones'>
-        <div className='gestionfecha'>
-            <p>Gestión de declaraciones</p>
+            <div className='gestionfecha'>
+                <p>Gestión de declaraciones</p>
                 <h2>ago 1, 2022 - ago 31, 2022</h2>
-                </div>
+            </div>
             <div className='gestioncajas'>
                 <div className='gestioncaja'>
                     <h3>NÚMERO ENTRADAS</h3>
@@ -22,7 +22,7 @@ const GestionDeclaraciones = () => {
             </div>
             <div className='gestionExportar'>
                 <a href="#"><span class="material-symbols-outlined">swap_vert</span>Exportar todas las declaraciones a Excel</a>
-        </div>
+            </div>
         </div>
     )
 }

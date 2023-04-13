@@ -1,3 +1,9 @@
-
+.prueba {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  padding: 200px;
+  font-size: 1.2rem;
+}
 
 /*# sourceMappingURL=inicio.css.map */
