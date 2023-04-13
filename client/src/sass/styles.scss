@@ -8,10 +8,6 @@ $mustard: #BFA317;
 $red-notification: #F2522E;
 $blue-pdf: #177DA6;
 
-//? FlexBox
-
-
-
 //? Variables - Font Color & Styles
 
 @font-face {
@@ -25,6 +21,9 @@ $fontSignika: 'Signika';
 $dark-font: #212529;
 $medium-font: #495057;
 $light-font: #B0B4B3;
+
+// Shadow
+$shadow: 1px 1px 7px -3px $dark-gray;
 
 //? Estilos globales
 body {
@@ -51,8 +50,6 @@ color: $medium-font;
 font-family: $fontSignika;
 }
 
-$shadow: 1px 1px 7px -3px $dark-gray;
-
 .container{
   max-width: 900px;
   margin: 0 auto;
@@ -62,16 +59,13 @@ $shadow: 1px 1px 7px -3px $dark-gray;
   background-color: $white;
   width: 100%;
 }
-
+// Components: Paginacion y Leyenda
 .footer{
   display: flex;
   justify-content: flex-end;
-
 }
 
-
 //? Import
-
 //* Pages
 @import './pages/declaraciones.scss';
 @import './pages/financiacion.scss';

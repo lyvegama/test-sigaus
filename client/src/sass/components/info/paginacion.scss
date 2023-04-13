@@ -1,13 +1,15 @@
 .paginacion {
     display    : flex;
     align-items: center;
-    font-size: 0.9rem;
-    span{
-        color: $light-font;
+    font-size  : 0.9rem;
+
+    span {
+        color    : $light-font;
         font-size: 1.5rem;
     }
-    p{
-        color: $light-font;
+
+    p {
+        color       : $light-font;
         margin-right: 20px;
     }
 }
@@ -19,13 +21,13 @@
         margin          : 0px 10px;
         border-style    : none;
         background-color: transparent;
-        color: $light-font;
+        color           : $light-font;
     }
 
     #active {
         border-radius   : 2px;
         background-color: $white;
-        color: $light-font;
+        color           : $light-font;
         border-color    : $dark-beige;
         border-style    : solid;
     }

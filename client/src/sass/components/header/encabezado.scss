@@ -1,13 +1,13 @@
-.encabezado{
-    display: flex;
-    justify-content:space-between;
-    margin-top: 10px;
+.encabezado {
+    display         : flex;
+    justify-content : space-between;
+    margin-top      : 10px;
     background-color: $white;
-    
-    }
 
-    .encabezadoDeclaraciones {
-        display: flex;
-        flex-direction: column;
-        width: 450px;
-    }
+}
+
+.encabezadoDeclaraciones {
+    display       : flex;
+    flex-direction: column;
+    width         : 450px;
+}
