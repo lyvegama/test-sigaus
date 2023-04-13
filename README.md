@@ -8,7 +8,6 @@
 - [Perfil de GitHub.](https://github.com/lyvegama)
 - [Repositorio con el proyecto de la prueba ténica.](https://github.com/lyvegama/test-sigaus)
 
-
 ### Inicialización del proyecto:
 Para inicializar el proyecto abrir la terminal y escribir los siguientes comandos:
 Con éste se clonará de GitHub mi repositorio de la prueba.
@@ -76,6 +75,5 @@ Una vez creado ese array lo guardaremos en un estado llamado **setMes** que a co
 | Uso de FlexBox | *display: flex;justify-content: flex-end;* |
 
 
-### Observaciones
 
 

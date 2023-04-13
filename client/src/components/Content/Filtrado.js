@@ -29,7 +29,6 @@ const Filtrado = () => {
     })
 
     const months = [
-
         { text: 'ENE', value: '01/01/2023 - 31/01/2023', sinta: 'enero' },
         { text: 'FEB', value: '01/02/2023 - 28/02/2023', sinta: 'febrero' },
         { text: 'MAR', value: '01/03/2023 - 31/03/2023', sinta: 'marzo' },

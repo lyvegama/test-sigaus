@@ -2,11 +2,12 @@
     border-style: solid;
     border-color: $dark-beige;
     border-width: 1px;
-    padding: 15px;
-    width: 140px;
-    p{
+    padding     : 15px;
+    width       : 140px;
+
+    p {
         font-weight: bold;
-        color: $dark-font;
+        color      : $dark-font;
     }
 }
 
@@ -14,12 +15,12 @@
     display        : flex;
     align-items    : center;
     justify-content: center;
+
     span {
         color: $blue-pdf;
     }
-    p{
+
+    p {
         color: $medium-font;
     }
 }
-
-

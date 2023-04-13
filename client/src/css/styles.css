@@ -41,6 +41,14 @@ p, h1, h2, h3, a {
   justify-content: flex-end;
 }
 
+.prueba {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  padding: 200px;
+  font-size: 1.2rem;
+}
+
 table {
   font-family: "Signika";
   width: 100%;
